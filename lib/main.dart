@@ -10,13 +10,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      initialRoute: 'tabs',
-      routes: {
-        'tabs' :(context) => const TabsScreen(),
-      } );
+    return  MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Material App',
+        initialRoute: 'tabs',
+        routes: {
+          'tabs': (context) => const TabsScreen(),
+        });
     
   }
 }
